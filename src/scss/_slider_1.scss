@@ -1,0 +1,167 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.slider_1 {
+  position: relative;
+  padding-bottom: 70px;
+}
+
+@media (min-width: $desktop) {
+
+  .slider_1 {
+    padding-bottom: 150px;
+  }
+}
+
+.slider_1__view320 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 10px;
+}
+
+@media (min-width: $tablet) {
+
+  .slider_1__view320 {
+    display: none;
+  }
+}
+
+.slider_1__view768 {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 30px;
+}
+
+@media (min-width: $tablet) {
+
+  .slider_1__view768 {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .slider_1__view768 {
+    display: none;
+  }
+}
+
+.slider_1__view1024 {
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  display: none;
+  gap: 50px;
+}
+
+@media (min-width: $desktop) {
+
+  .slider_1__view1024 {
+    display: flex;
+  }
+}
+
+@media (min-width: $oversize) {
+
+  .slider_1__view1024 {
+    display: none;
+  }
+}
+
+.slider_1__view1920 {
+  position: relative;
+  gap: 50px;
+  display: none;
+}
+
+@media (min-width: $oversize) {
+
+  .slider_1__view1920 {
+    display: flex;
+  }
+}
+
+.slider__line {
+  position: relative;
+  padding-top: 30px;
+}
+
+@media (min-width: $desktop) {
+
+  .slider__line {
+    padding-top: 40px;
+  }
+}
+
+.slider__line--view320 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet) {
+
+  .slider__line--view320 {
+    display: none;
+  }
+}
+
+.slider__line--view768 {
+  display: none;
+  justify-content: center;
+}
+
+@media (min-width: $tablet) {
+
+  .slider__line--view768 {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .slider__line--view768 {
+    display: none;
+  }
+}
+
+.slider__line--view1024 {
+  position: relative;
+  display: none;
+  justify-content: center;
+}
+
+@media (min-width: $desktop) {
+
+  .slider__line--view1024 {
+    display: flex;
+    }
+}
+
+.button {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  padding: 10px;
+  top: 50%;
+}
+
+.button__left {
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.button__right {
+  right: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.for_slider {
+  position: relative;
+}

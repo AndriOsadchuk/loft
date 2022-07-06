@@ -1,0 +1,111 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.section_1 {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+
+  .section_1 {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .section_1 {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}
+
+.section_1__title {
+  margin-bottom: 6px;
+}
+
+@media (min-width: $tablet) {
+
+  .section_1__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .section_1__title {
+    margin-bottom: 27px;
+  }
+}
+
+.section_1_block {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop) {
+
+  .section_1_block {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $oversize) {
+
+  .section_1_block {
+    gap: 102px;
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+
+  &__inside {
+    display: flex;
+    border-bottom: 1px solid #D5D5D5;
+  }
+
+  &--width {
+    width: 50%;
+  }
+
+  &--padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &--the_end {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .table {
+    width: 50%;
+  }
+}
+
+.roboto__table {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop) {
+
+  .roboto__table {
+    width: 50%;
+    padding-top: 5px;
+  }
+}
+
+.roboto__table p:first-of-type {
+  margin-bottom: 2px;
+}
+

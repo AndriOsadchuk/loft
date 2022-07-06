@@ -1,0 +1,82 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.section_2__block2 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  
+  .section_2__block2 {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  
+  .section_2__block2 {
+    gap: 31px;
+  }
+}
+
+.block2__left {
+  width: 100%;  
+}
+
+@media (min-width: $tablet) {
+  
+  .block2__left {
+    width: 50%;  
+  }
+}
+
+.block2__right {
+  width: 100%;  
+}
+
+@media (min-width: $tablet) {
+  
+  .block2__right {
+    width: 50%;  
+  }
+}
+
+.block2__title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+@media (min-width: $tablet) {
+  
+  .block2__title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.block2--margin {
+  margin-bottom: 12px;
+}
+
+@media (min-width: $tablet) {
+  
+  .block2--margin {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  
+  .block2--margin {
+    margin-bottom: 30px;
+  }
+}
+

@@ -1,0 +1,160 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.slider_2 {
+  padding-top: 70px;
+}
+
+@media (min-width: $tablet) {
+  
+  .slider_2 {
+    padding-top: 95px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .slider_2 {
+    padding-top: 150px;
+  }
+}
+
+.slider_2__title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777777;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+  
+  .slider_2__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.slider_2__320 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 10px;
+}
+
+@media (min-width: $tablet) {
+  
+  .slider_2__320 {
+    display: none;
+  }
+}
+
+.slider_2__768 {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 30px;
+}
+
+@media (min-width: $tablet) {
+  
+  .slider_2__768 {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+  
+  .slider_2__768 {
+    display: none;
+  }
+}
+
+.slider_2__1024 {
+  position: relative;
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 30px;
+}
+
+@media (min-width: $desktop) {
+
+  .slider_2__1024 {
+    display: flex;
+  }
+}
+
+@media (min-width: $oversize) {
+
+  .slider_2__1024 {
+    display: none;
+  }
+}
+
+.slider_2__1920 {
+  position: relative;
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 30px;
+}
+
+@media (min-width: $oversize) {
+
+  .slider_2__1920 {
+    display: flex;
+  }
+}
+
+.slider_2__line {
+  position: relative;
+  padding-top: 30px;
+}
+
+@media (min-width: $desktop) {
+
+  .slider_2__line {
+    padding-top: 40px;
+  }
+}
+
+.slider_2__line--view320 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet) {
+
+  .slider_2__line--view320 {
+    display: none;
+  }
+}
+
+.slider_2__line--view768 {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+
+  .slider_2__line--view768 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $oversize) {
+
+  .slider_2__line--view768 {
+    display: none;
+  }
+}

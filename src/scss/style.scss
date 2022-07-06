@@ -1,0 +1,137 @@
+@use "variables" as *;
+@use "mixin" as *;
+@use "header";
+@use "section_1";
+@use "slider_1";
+@use "section_2";
+@use "section_bg";
+@use "section_3";
+@use "slider_2";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1294px;
+}
+
+@media (min-width: $tablet) {
+
+  .wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .wrapper {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+
+.roboto {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  color: #777777;
+
+  &__color {
+    color: #393246;
+  }
+
+  &--margin {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  
+  .roboto--margin {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  
+  .roboto--margin {
+    margin-bottom: 95px;
+  }
+}
+
+.roboto_cond {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #777777;
+
+  &__color {
+    color: #878787;
+  }
+}
+
+.title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777777;
+
+  &--width {
+    max-width: 569px;
+  }
+
+  &--width2 {
+    max-width: 678px;
+  }
+
+  &--view {
+    line-height: 27px;
+  }
+}
+
+@media (min-width: $tablet) {
+
+  .title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .title--width2 {
+    max-width: 829px;
+  }
+}
+

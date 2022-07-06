@@ -1,0 +1,168 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.section_3 {
+  padding-top: 30px;
+}
+
+@media (min-width: $tablet) {
+  
+  .section_3 {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .section_3 {
+    padding-top: 100px;
+  }
+}
+
+.title_3 {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #777777;
+
+  &--margin {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: $tablet) {
+  
+  .title_3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .title_3--margin {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .title_3--margin {
+    margin-bottom: 24px;
+  }
+}
+
+.block3 {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+  
+  .block3 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .block3 {
+    margin-bottom: 44px;
+  }
+}
+
+.block3--width {
+  width: 100%;
+}
+
+@media (min-width: $tablet) {
+  
+  .block3--width {
+    width: 50%;
+  }
+}
+
+.margin__deskription {
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet) {
+  
+  .margin__deskription {
+    margin-bottom: 0;
+  }
+}
+
+.block3__image320 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: $tablet) {
+  
+  .block3__image320 {
+    display: none;
+  }
+}
+
+.block3__image768 {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  
+  .block3__image768 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .block3__image768 {
+    display: none;
+  }
+}
+
+.block3__image1024 {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+
+  .block3__image1024 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $oversize) {
+
+  .block3__image1024 {
+    display: none;
+  }
+}
+
+.block3__image1920 {
+  display: none;
+}
+
+@media (min-width: $oversize) {
+
+  .block3__image1920 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}

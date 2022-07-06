@@ -1,0 +1,35 @@
+{
+  "name": "sass12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp start",
+    "lint": "stylelint \"./src/**/*.scss\"",
+    "finish": "gulp finish",
+    "images": "gulp optimization-images"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "^5.1.3",
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.3",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard-scss": "^4.0.0"
+  },
+  "devDependencies": {}
+}
